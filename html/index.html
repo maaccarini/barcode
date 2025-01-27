@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Comparador</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://unpkg.com/quagga/dist/quagga.min.js"></script>
+</head>
+
+<body class="body">
+    <main class="main">
+        <section class="divisor">
+            <h1 class="page-title">Comparador de Códigos</h1>
+            <img src="/img/barcode-28.png" alt="" width="400">
+        </section>
+        <section class="dashboard">
+            <div class="box">
+                <input id="cod-1" class="input-field-box" type="text" name="caixa1" placeholder="código 1" size="30" required>
+                <input id="cod-2" class="input-field-box" type="text" name="caixa2" placeholder="código 2" size="30" required>
+                <input id="cod-3" class="input-field-box" type="text" name="caixa3" placeholder="código 3" size="30" required>
+                <input id="cod-4" class="input-field-box" type="text" name="caixa4" placeholder="código 4" size="30" required>
+            </div>
+            <div class="button-line">
+                <button onclick="clean()" class="dashboard_item_button" type="reset" name="limpar">
+                    Limpar
+                </button>
+                <button onclick="compare()" class="dashboard_item_button" type="button" name="comparar">
+                    Comparar
+                </button>
+            </div>
+            <div id="scanner-container">
+                <div id="scanner"></div>
+                <button onclick="stopScanner()" class="scanner">Fechar</button>
+            </div>
+            <section>
+    </main>
+</body>
+<script src="../js/main.js"></script>
+</html>
