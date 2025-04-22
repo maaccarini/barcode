@@ -1,42 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <title>Comparador</title>
+    <link rel="shurtcut icon" href="../img/barcode-28.ico">
     <link rel="stylesheet" href="../css/main.css">
-    <script src="https://unpkg.com/quagga/dist/quagga.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    <title>Comparador</title>
 </head>
 
-<body class="body">
-    <main class="main">
-        <section class="divisor">
-            <h1 class="page-title">Comparador de Códigos</h1>
-            <img src="/img/barcode-28.png" alt="" width="400">
-        </section>
-        <section class="dashboard">
-            <div class="box">
-                <input id="cod-1" class="input-field-box" type="text" name="caixa1" placeholder="código 1" size="30" required>
-                <input id="cod-2" class="input-field-box" type="text" name="caixa2" placeholder="código 2" size="30" required>
-                <input id="cod-3" class="input-field-box" type="text" name="caixa3" placeholder="código 3" size="30" required>
-                <input id="cod-4" class="input-field-box" type="text" name="caixa4" placeholder="código 4" size="30" required>
-            </div>
-            <div class="button-line">
-                <button onclick="clean()" class="dashboard_item_button" type="reset" name="limpar">
-                    Limpar
-                </button>
-                <button onclick="compare()" class="dashboard_item_button" type="button" name="comparar">
-                    Comparar
-                </button>
-            </div>
-            <div id="scanner-container">
-                <div id="scanner"></div>
-                <button onclick="stopScanner()" class="scanner">Fechar</button>
-            </div>
-            <section>
+<body>
+    <main class="main-page">
+        <button id="expand-button__view"><img src="../img/expand.png"></button>
+        <h1 class="title-page">Comparador</h1>
+        <img src="../img/barcode-28.png">
+        <div class="form-insert">
+            <input id="form-insert-1" class="input__form" type="text" placeholder="Código 1 Item 1" size="30" required>
+            <input id="form-insert-2" class="input__form" type="text" placeholder="Código 1 Item 2" size="30" required>
+            <input id="form-insert-3" class="input__form" type="text" placeholder="Código 2 Item 1" size="30" required>
+            <input id="form-insert-4" class="input__form" type="text" placeholder="Código 1 Item 2" size="30" required>
+        </div>
+        <button id="form-button__clear"><img src="../img/trash-can.png"></button>
+        <div class="video-scanner">
+            <button id="scanner-button__close"><img src="../img/close.png"></button>
+        </div>
     </main>
+    <script src="../js/main.js"></script>
 </body>
-<script src="../js/main.js"></script>
+<footer></footer>
 </html>
